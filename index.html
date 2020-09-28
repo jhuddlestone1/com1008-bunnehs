@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Bunnehs!</title>
+	<meta name="version" content="v0.1">
+	<meta name="author" content="Jamie Huddlestone">
+	<meta name="description" content="/'b&#x259;n&#x25b;&#x2b0;z/ <i>n. coll. pl.</i> rabbits, but on teh internets.">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<main>
+		<div id="canvas">
+			<canvas id="bunnehs">
+				Your browser does not support the HTML5 <code>canvas</code> tag.
+			</canvas>
+		</div>
+		<div id="title">
+			<h1>BUNNEHS!</h1>
+			<h2>PRESS START</h2>
+		</div>
+		<div id="credits">
+			<p>2018 Jamie Huddlestone</p>		
+		</div>
+		<div id="controls">
+			<input id="none" type="button" value="no bunnehs">
+			<input id="less" type="button" value="less bunnehs">
+			<input id="more" type="button" value="moar bunnehs">
+			<input id="all" type="button" value="all teh bunnehs">
+		</div>
+		<div id="instructions">
+			<p>Click on a bunny to select it, then click on the grass to have it jump there.<br>
+			Clicking on its ears will change its colour instead!<br>
+			You can also drag and drop (and throw) bunnies where you like...</p>
+		</div>
+	</main>
+
+</body>
+
+<!-- Scripts must be placed in dependency order, with main function in final position -->
+<script src="js/Environment.js"></script>
+<script src="js/Entity.js"></script>
+<script src="js/Land.js"></script>
+<script src="js/Bunny.js"></script>
+<script src="js/main.js"></script>
+
+</html>

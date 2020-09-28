@@ -1,0 +1,63 @@
+/*	style.css
+*
+*	Part of 'Bunnehs!' app
+*	2018 Jamie Huddlestone
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Press+Start+2P');
+
+html { height: 100%; }
+
+body {
+	height: 100%;
+	margin: 0;
+	background-color: silver;
+	color: white;
+	font-family: sans-serif;
+}
+
+main {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	background-color: green;
+	text-align: center;
+}
+
+#canvas {
+	background-color: lightskyblue;
+	background-image: linear-gradient(dodgerblue, aliceblue 80%, limegreen 80%, green);
+	/* ^ This saves having to (re)draw the instance of Land needed for ground collisions! */
+}
+
+#title, #instructions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+#title h1 {
+	font-family: "Luckiest Guy";
+	font-size: 18vmin;
+	color: rgba(255, 0, 0, 0.85);
+	text-shadow: 1px 2px 2px white;
+}
+
+#title h2 {
+	font-family: "Press Start 2P";
+	color: red;
+	text-shadow: 1px 1px white;
+	animation: blink 1s alternate infinite;
+}
+@keyframes blink {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+#controls, #instructions {
+	display: none;
+}
